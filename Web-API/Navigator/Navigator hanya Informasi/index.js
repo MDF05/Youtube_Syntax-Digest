@@ -51,3 +51,4 @@ console.log(navigator.vendorSub)
 
 // 49 navigator.webdriver: Menunjukkan apakah browser dijalankan dalam mode WebDriver atau tidak.
 console.log(navigator.webdriver)
+
