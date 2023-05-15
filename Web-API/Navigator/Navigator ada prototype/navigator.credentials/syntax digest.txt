@@ -1,0 +1,28 @@
+1.FederatedCredential(): constructor untuk membuat objek kredensial federasi yang merepresentasikan informasi kredensial yang diterima dari pihak ketiga seperti penyedia layanan identitas atau platform identitas.
+Contoh penggunaan:
+
+
+let federatedCredential = new FederatedCredential({
+  id: 'user@example.com',
+  name: 'John Doe',
+  provider: 'https://example.com'
+});
+
+
+2.PublicKeyCredential(): constructor untuk membuat objek kredensial publik yang merepresentasikan informasi kredensial berbasis kunci publik seperti kunci USB, NFC, atau kunci perangkat lunak.
+Contoh penggunaan:
+
+let publicKeyCredential = new PublicKeyCredential({
+  id: new Uint8Array([1, 2, 3, 4, 5]),
+  rawId: new Uint8Array([1, 2, 3, 4, 5]),
+  response: {
+    authenticatorData: new Uint8Array([1, 2, 3, 4, 5]),
+    clientDataJSON: new Uint8Array([1, 2, 3, 4, 5]),
+    signature: new Uint8Array([1, 2, 3, 4, 5]),
+    userHandle: new Uint8Array([1, 2, 3, 4, 5])
+  },
+  type: 'public-key'
+});
+
+
+3.passwordCredentials
