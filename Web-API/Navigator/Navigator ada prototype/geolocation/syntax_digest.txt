@@ -1,0 +1,67 @@
+
+penjelasan property
+📌1."accuracy" itu menunjukkan seberapa akurat informasi lokasi yang diberikan oleh perangkat atau browser. Semakin kecil angka yang ditunjukkan, semakin akurat informasi lokasi yang diberikan.
+
+📌2."altitude" menunjukkan ketinggian dari permukaan laut di lokasi tersebut. Jika nilainya null, maka informasi ketinggian tidak tersedia.
+
+📌3."AltitudeAccuracy" menunjukkan seberapa akurat informasi ketinggian tersebut. Jika nilainya null, maka informasi akurasi ketinggian tidak tersedia.
+
+📌4."Heading" menunjukkan arah pandangan mata kita ketika kita berada di lokasi tersebut. Jika nilainya null, maka informasi arah pandangan mata tidak tersedia.
+
+📌5."Latitude" menunjukkan garis lintang dari lokasi tersebut,latitude adalah garis yang membentang secara horizontal pada bola dunia
+
+📌6."longitude" menunjukkan garis bujur dari lokasi tersebut.garis bujur atau longitude adalah garis yang membentang secara vertikal pada bola dunia, yang digunakan untuk menunjukkan posisi suatu titik di sebelah timur atau barat meridian utama
+
+Nilai latitude dan longitude ini dipakai untuk menunjukkan posisi lokasi pada peta.
+    contoh : 
+    latitude, longitude
+    3.5651584, 98.6382336
+
+
+📌7."speed" menunjukkan kecepatan kita dalam pergerakan di lokasi tersebut. Jika nilainya null, maka informasi kecepatan tidak tersedia.
+
+
+
+
+
+
+
+
+
+
+
+📌function getCurrentPosition() dan watchPosition() 
+    parameter yang tersedia 
+        1.successCallback (wajib): Fungsi callback yang akan dijalankan ketika posisi pengguna berhasil didapatkan.
+
+        2.errorCallback (opsional): Fungsi callback yang akan dijalankan ketika terjadi kesalahan saat mendapatkan  posisi pengguna.
+
+    parameters tambahan: 
+        1.timeout: menentukan waktu maksimum (dalam milidetik) yang diizinkan untuk memperoleh lokasi sebelum       mengembalikan error.
+        Contoh penggunaan:
+
+        navigator.geolocation.getCurrentPosition(
+          successCallback,
+          errorCallback,
+          {timeout: 5000}
+        );
+
+        2.maximumAge: menentukan waktu maksimum (dalam milidetik) sejak terakhir kali lokasi diketahui sebelum  browser    mencoba mendapatkan lokasi baru.
+        Contoh penggunaan:
+
+        navigator.geolocation.getCurrentPosition(
+          successCallback,
+          errorCallback,
+          {maximumAge: 60000}
+        );
+
+        3.enableHighAccuracy: menentukan apakah browser harus menggunakan metode yang lebih akurat untuk    mendapatkan lokasi, yang bisa memakan waktu lebih lama dan menggunakan lebih banyak daya baterai. Nilai    default adalah false
+        Contoh penggunaan:
+
+        navigator.geolocation.getCurrentPosition(
+          successCallback,
+          errorCallback,
+          {enableHighAccuracy: true}
+        );
+
+📌method clearWatch() hanya membutuhkan satu parameter, yaitu watchId yang berupa ID dari watchPosition() yang ingin dihentikan pemantauannya.
