@@ -1,0 +1,38 @@
+
+
+
+
+📌methode atau function navigator.keyboard.getLayoutMap()
+    1.getLayoutMap(): Metode ini digunakan untuk mendapatkan peta tata letak keyboard saat ini. Peta tata letak keyboard memberikan informasi tentang karakter apa yang dihasilkan ketika tombol tertentu pada keyboard ditekan.
+
+    navigator.keyboard.getLayoutMap().then(function(layoutMap) {
+          console.log(layoutMap);
+        }).catch(function(error) {
+          console.error(error);
+        });
+
+
+📌methode atau function navigator.keyboard.lock()
+    Metode lock() dalam prototipe navigator.keyboard sebenarnya merupakan bagian dari proposal Web Locks API yang sedang dalam pengembangan. Tujuan dari metode ini adalah untuk memungkinkan penguncian akses ke sumber daya perangkat, termasuk keyboard, dengan izin yang tepat dan pengaturan keamanan yang relevan. Namun, saat ini belum diimplementasikan secara luas dan belum tersedia untuk digunakan secara umum.
+
+        navigator.keyboard.lock();
+
+    Pada saat ini, metode lock() dalam prototipe navigator.keyboard tidak didukung secara luas oleh browser-browser utama. Oleh karena itu, meskipun kita memanggil metode lock(), tombol pada keyboard tetap dapat ditekan dan menghasilkan kejadian keyboard seperti biasa
+
+📌methode atau function navigator.keyboard.unlock
+    unlock(): Metode ini digunakan untuk membuka kunci input keyboard yang sebelumnya dikunci menggunakan lock(). Setelah memanggil metode unlock(), kejadian keyboard dapat diterima kembali.
+
+        navigator.keyboard.unlock();
+
+
+
+
+
+
+
+
+
+
+
+
+
