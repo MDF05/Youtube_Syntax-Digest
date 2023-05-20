@@ -1,0 +1,11 @@
+navigator.locks adalah objek yang ada dalam lingkungan browser yang menyediakan API untuk mengelola penguncian sumber daya (Resource Locking). Ini adalah bagian dari spesifikasi Web Locks API yang sedang dikembangkan.
+
+Objek navigator.locks menyediakan metode untuk melakukan operasi-operasi terkait penguncian sumber daya seperti query() dan request(). Metode-metode ini memungkinkan aplikasi untuk memeriksa ketersediaan kunci dan meminta akses ke sumber daya bersama secara eksklusif.
+
+Berikut adalah penjelasan singkat tentang metode yang ada dalam navigator.locks:
+
+    1.query(): Metode ini digunakan untuk memeriksa ketersediaan kunci untuk sumber daya bersama. Ini mengambil objek kunci sebagai argumen dan mengembalikan janji (Promise) yang akan diselesaikan dengan nilai boolean. Jika nilai kembali adalah true, itu berarti kunci tersedia. Jika nilai kembali adalah false, itu berarti kunci tidak tersedia saat ini.
+
+    2.request(): Metode ini digunakan untuk meminta akses eksklusif ke sumber daya bersama dengan mengunci menggunakan objek kunci. Ini mengambil objek kunci sebagai argumen dan mengembalikan janji (Promise) yang akan diselesaikan dengan objek Lock jika permintaan kunci berhasil. Objek Lock ini akan digunakan untuk melepaskan kunci setelah selesai menggunakan sumber daya bersama.
+    
+ Namun, perlu diperhatikan bahwa Web Locks API masih merupakan teknologi eksperimental dan kompatibilitas browser-nya harus diperiksa dengan cermat sebelum digunakan di produksi.
