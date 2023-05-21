@@ -1,0 +1,150 @@
+
+Codec adalah singkatan dari "compressor-decompressor" atau "coder-decoder." Ini adalah teknologi yang digunakan untuk mengompresi dan mendekompresi data, seperti file audio atau video, untuk mengurangi ukuran file dan memungkinkan transfer data yang lebih efisien.
+Berikut adalah daftar codec video yang umum digunakan, beserta format file yang biasa digunakan dan contoh penulisannya:
+
+1. Codec H.264/AVC:
+   - Format file: MP4, MKV, AVI
+   - Contoh penulisan: video/mp4;codecs=avc1, video/x-matroska;codecs=avc1, video/x-msvideo;codecs=avc1
+
+2. Codec H.265/HEVC:
+   - Format file: MP4, MKV
+   - Contoh penulisan: video/mp4;codecs=hev1, video/x-matroska;codecs=hev1
+
+3. Codec VP9:
+   - Format file: WebM
+   - Contoh penulisan: video/webm;codecs=vp9
+
+4. Codec AV1:
+   - Format file: MP4, MKV, WebM
+   - Contoh penulisan: video/mp4;codecs=av01, video/x-matroska;codecs=av01, video/webm;codecs=av01
+
+5. Codec MPEG-2:
+   - Format file: MPG, VOB (DVD), MTS (AVCHD), TS (MPEG-2 Transport Stream)
+   - Contoh penulisan: video/mpeg;codecs=mpeg2video, video/dvd;codecs=mpeg2video, video/mp2t;codecs=mpeg2video
+
+6. Codec MPEG-4:
+   - Format file: MP4, AVI
+   - Contoh penulisan: video/mp4;codecs=mp4v-es, video/x-msvideo;codecs=mp4v
+
+7. Codec Theora:
+   - Format file: OGV (Ogg Video)
+   - Contoh penulisan: video/ogg;codecs=theora
+
+8. Codec VP8:
+   - Format file: WebM, MKV
+   - Contoh penulisan: video/webm;codecs=vp8, video/x-matroska;codecs=vp8
+
+9. Codec Xvid:
+   - Format file: AVI
+   - Contoh penulisan: video/x-msvideo;codecs=xvid
+
+10. Codec DivX:
+    - Format file: AVI
+    - Contoh penulisan: video/x-msvideo;codecs=divx
+
+11. Codec WMV (Windows Media Video):
+    - Format file: WMV
+    - Contoh penulisan: video/x-ms-wmv
+
+12. Codec QuickTime:
+    - Format file: MOV
+    - Contoh penulisan: video/quicktime
+
+13. Codec ProRes:
+    - Format file: MOV
+    - Contoh penulisan: video/quicktime;codecs=apch
+
+14. Codec DNxHD:
+    - Format file: MOV, MXF
+    - Contoh penulisan: video/quicktime;codecs=dnxhd, video/mxf;codecs=dnxhd
+
+15. Codec RV (RealVideo):
+    - Format file: RV
+    - Contoh penulisan: video/vnd.rn-realvideo
+
+16. Codec VC-1:
+    - Format file: WMV, ASF
+    - Contoh penulisan: video/x-ms-wmv;codecs=vc1, video/x-ms-asf;codecs=vc1
+
+17. Codec Sorenson Spark:
+    - Format file: FLV
+    - Contoh penulisan: video/x-flv;codecs
+
+18. Codec Indeo:
+    - Format file: AVI
+    - Contoh penulisan: video/x-msvideo;codecs=indeo
+
+19. Codec Cinepak:
+    - Format file: AVI
+    - Contoh penulisan: video/x-msvideo;codecs=cvid
+
+20. Codec MJPEG (Motion JPEG):
+    - Format file: AVI
+    - Contoh penulisan: video/x-motion-jpeg
+
+Harap dicatat bahwa contoh penulisan ini mengikuti pola MIME type yang umum digunakan untuk menyatakan codec dalam format file video. Namun, implementasi sebenarnya dapat bervariasi tergantung pada lingkungan atau perangkat yang digunakan.
+
+
+    Berikut adalah beberapa contoh codec dengan versi atau profil dan level codec yang umum digunakan
+    
+    a. Codec H.264/AVC:
+       - Kode Codec: avc1.640028
+    
+    b. Codec H.265/HEVC:
+       - Kode Codec: hev1.2.4.L123.B0
+    
+    c. Codec VP9:
+       - Kode Codec: vp09.00.10.08
+    
+    d. Codec AV1:
+       - Kode Codec: av01.0.05M.08
+    
+    e. Codec MPEG-2:
+       - Kode Codec: mp4v.20.8
+    
+    f. Codec MPEG-4:
+       - Kode Codec: mp4v.20.8
+    
+    g. Codec Theora:
+       - Kode Codec: theo.60.8.0
+    
+    h. Codec VC-1:
+       - Kode Codec: vc-1.2.1.DVDRip
+    
+    i. Codec VP8:
+       - Kode Codec: vp8.0.9.0
+    
+    j. Codec Xvid:
+        - Kode Codec: xvid.123456
+    
+    k. Codec DivX:
+        - Kode Codec: divx.6.0.0
+    
+    l. Codec WMV (Windows Media Video):
+        - Kode Codec: wmv2.9.0
+    
+    m. Codec QuickTime:
+        - Kode Codec: qt.263.1.0
+    
+    n. Codec ProRes:
+        - Kode Codec: apch.1080.2.0
+    
+    o. Codec DNxHD:
+        - Kode Codec: dnxhd.123.8.0
+    
+    p. Codec RV (RealVideo):
+        - Kode Codec: rv40.12.0
+    
+    q. Codec Cinepak:
+        - Kode Codec: cvid.321.0
+    
+    r. Codec MJPEG (Motion JPEG):
+        - Kode Codec: mjpeg.422.1
+    
+    s. Codec Indeo:
+        - Kode Codec: indeo5.11.0
+    
+    t. Codec Sorenson Spark:
+        - Kode Codec: svq1.3.0
+
+Harap dicatat bahwa angka-angka di belakang kode codec tersebut mewakili variasi versi, profil, level, atau parameter lain yang khusus untuk codec tertentu. Setiap codec dapat memiliki format penulisan kode yang berbeda, dan contoh-contoh di atas hanya mencakup beberapa codec dengan representasi angka yang umum digunakan.

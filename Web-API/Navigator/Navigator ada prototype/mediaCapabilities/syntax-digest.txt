@@ -1,0 +1,53 @@
+API navigator.mediaCapabilities memungkinkan Anda untuk menguji dan memperoleh informasi tentang kemampuan media yang didukung, seperti format audio dan video yang didukung, dukungan DRM (Digital Rights Management), resolusi video maksimum, atau kemampuan dekoding dan enkoding.
+
+    1.navigator.mediaCapabilities.decodingInfo(config): Metode ini digunakan untuk mendapatkan informasi tentang kemampuan dekoding (pemrosesan) perangkat untuk format media tertentu. 
+
+    2.navigator.mediaCapabilities.encodingInfo(config): Metode ini digunakan untuk mendapatkan informasi tentang kemampuan enkoding (pembuatan) perangkat untuk format media tertentu. 
+
+configurasi arguments : 
+    1.type : merupakan property pertama dalam objek di argument decodinginformation
+        a."file": Ini menunjukkan bahwa kita ingin memeriksa kemampuan perangkat untuk memproses file media. Dengan menggunakan nilai ini, kita dapat menentukan karakteristik file media seperti video, audio,
+
+        b."media-source": Ini menunjukkan bahwa kita ingin memeriksa kemampuan perangkat untuk memproses media melalui API Media Source Extensions (MSE). MSE adalah API JavaScript yang memungkinkan pemutaran video dan audio yang adaptif dan streaming langsung dari server.
+
+        c."media-session": Ini menunjukkan bahwa kita ingin memeriksa kemampuan perangkat untuk menggunakan API Media Session. API Media Session memungkinkan pengontrolan media seperti pemutaran, jeda, dan penyesuaian volume melalui antarmuka pengguna sistem, seperti media controls di panel notifikasi atau pengontrol media di headset.
+
+        d."webgl": Ini menunjukkan bahwa kita ingin memeriksa kemampuan perangkat untuk mendukung WebGL (Web Graphics Library), yang merupakan API grafis 3D pada browser. Dengan nilai ini, kita dapat memeriksa kemampuan perangkat untuk melakukan rendering grafis 3D di browser menggunakan WebGL.
+
+        e."webaudio": Ini menunjukkan bahwa kita ingin memeriksa kemampuan perangkat untuk mendukung Web Audio API, yang merupakan API JavaScript untuk memanipulasi dan mengontrol audio di browser. Dengan menggunakan nilai ini, kita dapat memeriksa kemampuan perangkat untuk memproses audio menggunakan Web Audio API.
+
+    📌.type : merupakan property pertama dalam objek di arguments endcodinginformation
+
+        a.record
+        Merupakan konfigurasi untuk merekam media, mis. menggunakan MediaRecorder.
+
+        b.webrtc
+        Merupakan konfigurasi dimaksudkan untuk dikirim melalui sarana elektronik (misalnya menggunakan RTCPeerConnection). Catatan: Firefox menggunakan transmisi untuk jenis ini, dan webrtc tidak berfungsi.
+
+        c.transmission
+        Sinonim dari webrtc untuk digunakan di Firefox
+
+    2. di parameter kedua ada objek yang merupkan tipe konten yang ingin diperiksa berikut konten yang dapat diperiksa
+        a.video: Sub-argumen yang memberikan informasi tentang video yang ingin diperiksa kemampuannya.
+
+            contentType: Informasi tentang jenis konten video yang ingin diperiksa. Pada contoh ini, kita ingin memeriksa kemampuan perangkat   untuk memproses video dengan format MP4 menggunakan codec AVC dengan kode 'avc1.640028'.
+
+            width: Lebar video dalam piksel. Dalam contoh ini, lebar videonya adalah 1080 piksel.
+
+            height: Tinggi video dalam piksel. Dalam contoh ini, tinggi videonya adalah 720 piksel.
+
+            bitrate: Bitrate video, yaitu jumlah data yang dibutuhkan untuk menyimpan satu detik video. Dalam contoh ini, bitrate videonya  adalah 800 kbps.
+
+            framerate: Framerate atau jumlah bingkai video yang ditampilkan per detik. Dalam contoh ini, framerate videonya adalah 60 bingkai   per detik.
+
+        b.audio: Sub-argumen yang memberikan informasi tentang audio yang ingin diperiksa kemampuannya.
+
+            contentType: Informasi tentang jenis konten audio yang ingin diperiksa. Dalam contoh ini, kita ingin memeriksa kemampuan    perangkat untuk memproses audio dengan format MPEG.
+
+            channels: Jumlah saluran audio. Dalam contoh ini, audio memiliki 2 saluran (stereo).
+
+            bitrate: Bitrate audio, yaitu jumlah data yang dibutuhkan untuk menyimpan satu detik audio. Dalam contoh ini, bitrate audio     adalah 128 kbps.
+
+            samplerate: jumlah sampel audio yang diambil per detik dalam proses digitalisasi audio dalam contoh ini 5200,
+
+Jadi, dengan memberikan informasi tersebut kepada navigator.mediaCapabilities, kita dapat memeriksa apakah perangkat memiliki kemampuan yang cukup untuk memproses video, audio dan gambar dengan spesifikasi tersebut.
