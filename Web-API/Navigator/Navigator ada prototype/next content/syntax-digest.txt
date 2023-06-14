@@ -1,0 +1,13 @@
+Di dalam prototipe `navigator.mediaDevices`, terdapat beberapa fungsi yang dapat Anda gunakan untuk mengakses dan mengendalikan perangkat media. Berikut adalah beberapa fungsi penting yang ada di dalam prototipe `navigator.mediaDevices`:
+
+1. `getUserMedia(constraints)`: Fungsi ini digunakan untuk meminta izin pengguna dan mendapatkan media stream dari perangkat media yang diinginkan, seperti kamera dan mikrofon. Anda perlu memberikan objek `constraints` yang menentukan jenis media yang ingin Anda akses. Contoh penggunaan fungsi ini telah dijelaskan dalam penjelasan sebelumnya.
+
+2. `getDisplayMedia(constraints)`: Fungsi ini digunakan untuk mendapatkan media stream dari layar pengguna. Anda dapat menggunakan fungsi ini untuk membuat fitur berbagi layar pada aplikasi web. Seperti `getUserMedia()`, Anda perlu memberikan objek `constraints` yang menentukan preferensi Anda terkait media yang ingin diakses.
+
+3. `enumerateDevices()`: Fungsi ini mengembalikan janji (promise) yang akan mengembalikan daftar perangkat media yang tersedia, seperti kamera, mikrofon, dan perangkat audio lainnya yang terhubung ke sistem. Dengan menggunakan fungsi ini, Anda dapat memeriksa jenis perangkat yang tersedia dan memungkinkan pengguna memilih perangkat yang akan digunakan.
+
+4. `supportedConstraints`: Properti ini adalah objek yang berisi daftar opsi konfigurasi yang didukung oleh perangkat media. Anda dapat menggunakan properti ini untuk memeriksa opsi yang tersedia untuk membatasi atau mengkonfigurasi media stream yang ingin Anda akses.
+
+5. `ondevicechange`: Properti ini adalah pengaturan penanganan acara (event handler) yang akan dipanggil ketika ada perubahan pada perangkat media yang tersedia. Anda dapat menggunakan properti ini untuk memperbarui tampilan atau melakukan tindakan tertentu ketika perangkat media berubah.
+
+Itu adalah beberapa fungsi penting yang ada di dalam prototipe `navigator.mediaDevices`. Dengan menggunakan fungsi-fungsi ini, Anda dapat mengakses, mengendalikan, dan berinteraksi dengan perangkat media pada peramban web untuk membuat aplikasi web yang kaya dengan fitur-fitur media yang beragam.
